@@ -669,7 +669,7 @@ public:
 
     template <typename K>
     void Erase(const K& key) {
-        return Erase(KeyToDataStream(key));
+        Erase(KeyToDataStream(key));
     }
 
     void Erase(const CDataStream& ssKey) {
